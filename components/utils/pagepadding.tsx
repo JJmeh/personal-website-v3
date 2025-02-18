@@ -6,7 +6,7 @@ interface PagePaddingProps {
 
 const PagePadding: React.FC<PagePaddingProps> = ({ children }) => {
     return (
-        <div className="px-16 md:px-20">
+        <div className="px-8 sm:px-16 md:px-20">
             {children}
         </div>
     )
