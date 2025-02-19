@@ -14,8 +14,8 @@ export default {
       },
       keyframes: {
         'pulse-outward': {
-          '0%': { transform: 'scale(0)', opacity: 0.8 },
-          '100%': { transform: 'scale(1.5)', opacity: 0 },
+          '0%': { transform: 'scale(0)', opacity: '0.8' },
+          '100%': { transform: 'scale(1.5)', opacity: '0' },
         },
         'scale-animation': {
           '0%, 100%': { transform: 'scale(1)'},
