@@ -10,13 +10,13 @@ import StartupScreen from "@/components/base/startupscreen";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Jeremiah Jason · Freelance Software Developer",
-  description: "Freelance Software Developer. I create landing pages, websites and web application. Available for hire",
-  keywords: ["Software Engineer", "SEO", "Web Development", "Freelance", 'Available for hire', 'Jeremiah Jason'],
+  title: "Jeremiah Jason | Freelance Software Engineer and SaaS Developer",
+  description: "Official portfolio of Jeremiah Jason, a freelance Software Enginer, Web Developer and SaaS Developer. I create landing pages, websites and web application. Available for hire",
+  keywords: ["Software Engineer", "SEO", "Web Development", "Freelance", 'Available for hire', 'Jeremiah Jason', 'SaaS Developer'],
   authors: [{ name: "Jeremiah Jason" }],
   openGraph: {
-    title: "Jeremiah Jason · Freelance Software Developer",
-    description: "Freelance Software Developer. I create landing pages, websites and web application. Available for hire",
+    title: "Jeremiah Jason | Freelance Software Engineer and SaaS Developer",
+    description: "Official portfolio of Jeremiah Jason, a freelance Software Enginer, Web Developer and SaaS Developer. I create landing pages, websites and web application. Available for hire",
     url: "https://jeremiahjason.com",
     siteName: "Jeremiah Jason",
     images: [
