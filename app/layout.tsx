@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Navbar from "@/components/layouts/header";
 import Footer from "@/components/layouts/footer";
+import PlausibleProvider from "next-plausible";
 
 export const metadata: Metadata = {
   title: "Jeremiah Jason · Freelance Software Developer",
@@ -17,6 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <PlausibleProvider domain="jeremiahjason.com" customDomain="https://plausible.jeremiahjason.com" enabled selfHosted/>
+      </head>
       <body
         className={`${geistSans.variable} antialiased bg-whiteish text-foreground`}
       >
