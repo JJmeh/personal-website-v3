@@ -8,6 +8,7 @@ import ExperienceCard from "@/components/base/experienceCard";
 import { ExperienceCardProps } from "@/components/base/experienceCard";
 import ServiceCard, { ServiceCardProps } from "@/components/base/serviceCard";
 import SocialLink from "@/components/base/socialLink";
+import ScrollToFade from "@/components/utils/scrollToFade";
 
 export default function Home() {
   
@@ -69,15 +70,18 @@ export default function Home() {
       <section id="hero-section" className="w-screen bg-primary h-[28rem] md:h-[38rem]">
         <PagePadding>
           <div className="max-w-[80rem] mx-auto pt-32 md:pt-48 pb-40 md:pl-[10%]">
+            <ScrollToFade>
             <h1 className="text-foreground md:text-whiteish font-semibold tracking-[-0.005em] text-[52px] md:text-[4rem] lg:text-[5rem] leading-[1.05]">
               Jeremiah Jason<br></br>
               Freelance software <br></br>
               engineer
             </h1>
+            </ScrollToFade>
           </div>
         </PagePadding>
       </section>
 
+      <ScrollToFade>
       <section id="short-intro" className="py-24 md:py-40 border-b border-b-secondary">
         <PagePadding>
           <div className="w-full md:max-w-[80rem] mx-auto md:pl-[10%]">
@@ -95,9 +99,17 @@ export default function Home() {
           </div>
         </PagePadding>
       </section>
+      </ScrollToFade>
 
-      <ProjectSection></ProjectSection>
+      <ScrollToFade>
+      <ProjectSection></ProjectSection> 
+      </ScrollToFade>
+
+      <ScrollToFade>
       <VentureSection></VentureSection>
+      </ScrollToFade>
+
+      <ScrollToFade>
       <section id="about-sections" className="py-24 md:py-40 border-b border-b-secondary">
           <PagePadding>
               <div className="max-w-[80rem] mx-auto">
@@ -118,7 +130,9 @@ export default function Home() {
               </div>
           </PagePadding>
       </section>
+      </ScrollToFade>
 
+      <ScrollToFade>
       <section id="experience-sections" className="py-24 md:py-40 border-b border-b-secondary">
           <PagePadding>
               <div className="max-w-[80rem] mx-auto">
@@ -155,7 +169,9 @@ export default function Home() {
               </div>
           </PagePadding>
       </section>
+      </ScrollToFade>
 
+      <ScrollToFade>
       <section id="services-sections" className="py-24 md:py-40 border-b border-b-secondary">
           <PagePadding>
               <div className="max-w-[80rem] mx-auto">
@@ -177,7 +193,9 @@ export default function Home() {
               </div>
           </PagePadding>
       </section>
-
+      </ScrollToFade>
+      
+      <ScrollToFade>
       <section id="contact-sections" className="py-24 md:py-40">
           <PagePadding>
               <div className="max-w-[80rem] mx-auto">
@@ -214,6 +232,7 @@ export default function Home() {
               </div>
           </PagePadding>
       </section>
+      </ScrollToFade>
     </main>
   );
 }

@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/layouts/header";
 import Footer from "@/components/layouts/footer";
 import PlausibleProvider from "next-plausible";
+import StartupScreen from "@/components/base/startupscreen";
 
 export const metadata: Metadata = {
   title: "Jeremiah Jason · Freelance Software Developer",
@@ -23,12 +24,15 @@ export default function RootLayout({
       </head>
       <body
         className={`${geistSans.variable} antialiased bg-whiteish text-foreground`}
-      >
-        <Navbar></Navbar>
-        <div id="nav-bar-spacer" className="h-20"></div>
-        {children}
+        >
+        <StartupScreen>
+          <Navbar></Navbar>
+          <div id="nav-bar-spacer" className="h-20"></div>
 
-        <Footer></Footer>
+          {children}
+
+          <Footer></Footer>
+        </StartupScreen>
       </body>
     </html>
   );

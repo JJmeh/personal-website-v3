@@ -8,6 +8,20 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        'pulse-custom': 'pulse-outward 1.5s infinite ease-out',
+        'scale-loop': 'scale-animation 1.5s infinite ease-in-out'
+      },
+      keyframes: {
+        'pulse-outward': {
+          '0%': { transform: 'scale(0)', opacity: 0.8 },
+          '100%': { transform: 'scale(1.5)', opacity: 0 },
+        },
+        'scale-animation': {
+          '0%, 100%': { transform: 'scale(1)'},
+          '50%': { transform: 'scale(1.1)'},
+        },
+      },
       colors: {
         primary: '#9ea793',
         secondary: '#D5DCCB',
