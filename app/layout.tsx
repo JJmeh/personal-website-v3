@@ -12,7 +12,7 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "Jeremiah Jason · Freelance Software Developer",
   description: "Freelance Software Developer. I create landing pages, websites and web application. Available for hire",
-  keywords: ["Next.js", "SEO", "Web Development"],
+  keywords: ["Software Engineer", "SEO", "Web Development", "Freelance", 'Available for hire'],
   authors: [{ name: "Jeremiah Jason" }],
   openGraph: {
     title: "Jeremiah Jason · Freelance Software Developer",
